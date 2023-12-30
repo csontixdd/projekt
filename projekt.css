@@ -1,23 +1,15 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20vh;
-    background-color: #BAA898;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #EEE0CB;
-}
-.box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #839788;
-    gap: 1rem;
-}
+#jatekTer {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+  }
+  
+  #jatekTer div {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  
