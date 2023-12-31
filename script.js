@@ -3,7 +3,7 @@ let idoElem = document.getElementById("ido");
 let pontszamElem = document.getElementById("pontszam");
 let talalatokElem = document.getElementById("talalatok");
 
-let szinekEsSzavak = ['piros', 'zold', 'kek', 'alma', 'korte', 'eper', 'barack'];
+let szinekEsSzavak = [`<img src="./img/${pexels-crina-doltu-1202481}.jpg">`, '<img src="./img/pexels-de-lemster-krant-13649834.jpg">', '<img src="./img/pexels-guillaume-meurice-1317844.jpg">', '<img src="./img/pexels-mali-maeder-225406.jpg">', '<img src="./img/pexels-pixabay-236660.jpg">', '<img src="./img/pexels-наталья-семенкова-991831.jpg">', 'barack'];
 let kartyak = szinekEsSzavak.concat(szinekEsSzavak); // duplikáljuk a kártyákat
 let megnyitottKartyak = [];
 let megnyertKartyak = [];

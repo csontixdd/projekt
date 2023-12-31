@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BAA898;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.bevezeto{
+    font-size: 1.2rem;
+    font-family: 'EB Garamond', serif;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #jatekTer {
     display: grid;
     grid-template-columns: repeat(4, 100px);

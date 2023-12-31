@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Memóriajáték</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -7,19 +8,34 @@
   <link rel="stylesheet" href="projekt.css">
   <script src="projekt.css" defer></script>
 </head>
+
 <body>
+  <header>
+    <h1>Memóriajáték</h1>
+  </header>
 
-<h1>Memóriajáték</h1>
+  <main>
+    <div class="bevezeto">
+      <p>
+      <h2>Utasítások és más információk</h2><br>Ez egy memóriajáték, a játék lényege hogy minnél előbb megtaláld a
+      párokat 30mp alatt. A négyzetekre kell kattintanod majd megjelenik egy kép és annak a párját kell megkeresned. Ha
+      sikerült megtalálnod az összes párt az "Újrakezdés" gombbal újrakezdheted a játékot, emelett ha lejárt az idő
+      mielőtt betudtad volna fejezni akkor is az "Újrakezdés" gombbal megpróbálkozhatsz vele mégegyszer. <br><br>A játék
+      készítői: Csontos Dorina, Vaszilkó Márton és Pampuk Panna Viktóia</p>
+    </div>
+    <div class="flexbox">
+      <div id="jatekTer">
 
-<div id="jatekTer">
+      </div>
+    </div>
 
-</div>
 
-<div id="eredmenyek">
-  <p>Elért pontszám: <span id="pontszam">0</span></p>
-  <p>Megtalált párok: <span id="talalatok">0</span></p>
-  <p id="ido">Idő: 0 másodperc</p>
-</div>
+    <div id="eredmenyek">
+      <p>Elért pontszám: <span id="pontszam">0</span></p>
+      <p>Megtalált párok: <span id="talalatok">0</span></p>
+      <p id="ido">Idő: 0 másodperc</p>
+    </div>
+  </main>
 
 </body>
 </html>
