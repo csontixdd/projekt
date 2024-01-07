@@ -2,8 +2,9 @@ let jatekTer = document.getElementById("jatekTer");
 let idoElem = document.getElementById("ido");
 let pontszamElem = document.getElementById("pontszam");
 let talalatokElem = document.getElementById("talalatok");
+let ujrakezdes=document.getElementById("ujrakezdes");
 
-let szinekEsSzavak = [`<img src="./img/${pexels-crina-doltu-1202481}.jpg">`, '<img src="./img/pexels-de-lemster-krant-13649834.jpg">', '<img src="./img/pexels-guillaume-meurice-1317844.jpg">', '<img src="./img/pexels-mali-maeder-225406.jpg">', '<img src="./img/pexels-pixabay-236660.jpg">', '<img src="./img/pexels-наталья-семенкова-991831.jpg">', 'barack'];
+let szinekEsSzavak = [`<img src="./img/cat1.jpg">`, '<img src="./img/cat2.jpg">', '<img src="./img/cat3.jpg">', '<img src="./img/cat4.jpg">', '<img src="./img/cat5.webp">', '<img src="./img/cat6.jpg">'];
 let kartyak = szinekEsSzavak.concat(szinekEsSzavak); // duplikáljuk a kártyákat
 let megnyitottKartyak = [];
 let megnyertKartyak = [];
@@ -41,6 +42,21 @@ function jatekInicializalas() {
   idoMero = setInterval(function() {
     ido++;
     idoElem.textContent = `Idő: ${ido} másodperc`;
+    if( ido==120){
+    clearInterval(idoMero);
+    alert("Sajnos lejárt az időd!")
+
+
+let osszes=document.querySelectorAll("#jatekTer div");
+for(let i=0;i<osszes.length; i++){
+osszes[i].innerHTML=kartyak[osszes[i].dataset.index];
+
+
+
+}
+    }
+
+
   }, 1000);
 }
 
@@ -49,7 +65,7 @@ function kartyaKattintas() {
   let index = kartya.dataset.index;
 
   if (elsoKattintas || (megnyitottKartyak.length < 2 && !megnyertKartyak.includes(index))) {
-    kartya.textContent = kartyak[index];
+    kartya.innerHTML = kartyak[index];
 
     if (elsoKattintas) {
       elsoKattintas = false;
@@ -87,3 +103,10 @@ function kartyaKattintas() {
 }
 
 jatekInicializalas();
+
+ujrakezdes.addEventListener("click" , event=>{
+
+location.reload();
+
+
+})

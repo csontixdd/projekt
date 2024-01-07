@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-*{margin: 0;padding: 0;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;
+font-family: 'Rubik Doodle Shadow', system-ui;;
+
+}
 header{
     height: 15vh;
     display: flex;
@@ -8,11 +12,17 @@ header{
     background-color: #BAA898;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
-    font-style: italic;
+
+}
+h1{
+font-size: 40px;
+
+
 }
 .bevezeto{
-    font-size: 1.2rem;
-    font-family: 'EB Garamond', serif;
+    padding:15px ;
+    font-size: 1rem;
+
 }
 .flexbox{
     display: flex;
@@ -23,13 +33,71 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-gap: 10px;
+    padding: 15px;
+    background-color: #eee0cb;
+    border-radius: 10% 10% 0 0;
+
 }
   
 #jatekTer div {
     width: 100px;
     height: 100px;
-    background-color: #ccc;
+    background-color: #BAA898;
     text-align: center;
     line-height: 100px;
     cursor: pointer;
+    border-radius: 10%;
+}
+
+#jatekTer img{
+width: 100px;
+height: 100px;
+border-radius: 10%;
+
+
+
+} 
+
+footer{
+    background-color: #eee0cb;
+margin: auto;
+width: 460px;
+padding: 15px;
+border-radius: 0 0 10% 10%;
+}
+
+.reset{
+float: right;
+
+
+
+}
+body{
+
+
+    background-color: #aec6b4;
+}
+
+#ujrakezdes{
+
+
+    width: 80px ;
+    height: 50px;
+    border: 10px;
+    background-color: #bfd7ea;
+}
+
+#eredmenyek{
+
+
+    background-color: #bfd7ea;
+}
+
+#logo{
+height: 120px;
+width: 140px;
+float: left ;
+position: absolute;
+left: 10px;
+
 }
