@@ -101,3 +101,24 @@ position: absolute;
 left: 10px;
 
 }
+
+#lenti{
+width: 400px;
+height: 150px;
+margin-top: 4rem;
+margin-bottom: 0;
+border: 0;
+padding-bottom: 0;
+justify-content: center;
+text-align: center;
+margin-left: 45rem;
+}
+
+#paws{
+
+    width: 400px;
+    height: 250px;
+float: right;
+
+
+}

@@ -44,7 +44,7 @@ function jatekInicializalas() {
     idoElem.textContent = `Idő: ${ido} másodperc`;
     if( ido==120){
     clearInterval(idoMero);
-    alert("Sajnos lejárt az időd!")
+    alert("Sajnos lejárt az időd! 😿")
 
 
 let osszes=document.querySelectorAll("#jatekTer div");
@@ -96,7 +96,7 @@ function kartyaKattintas() {
 
       if (megnyertKartyak.length === kartyak.length) {
         clearInterval(idoMero);
-        alert(`Gratulálok! Nyertél ${ido} másodperc alatt!`);
+        alert(`Gratulálok! Nyertél ${ido} másodperc alatt! 😻`);
       }
     }
   }
