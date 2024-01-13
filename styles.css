@@ -122,3 +122,60 @@ float: right;
 
 
 }
+
+#sotet{
+
+    height: 70px;
+    width: 70px;
+    float: right ;
+    position: absolute;
+    right: 10px;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: #776f6863;
+
+}
+
+.sotet header{
+background-color: rgb(85, 72, 72);
+color: rgb(0, 0, 0);
+
+}
+
+.sotet #eredmenyek , .sotet #ujrakezdes{
+
+
+background-color: rgb(85, 72, 72);
+color: rgb(0, 0, 0);
+font-weight: bolder;
+
+
+}
+
+.sotet #jatekTer div{
+
+background-color: rgb(69, 61, 61);
+
+
+}
+
+.sotet{
+background-color: #797068;
+color: rgb(21, 21, 20);
+font-weight: bolder;
+
+}
+
+.sotet #jatekTer{
+
+background-color: #93877e;
+
+
+}
+
+.sotet footer{
+   background-color: rgb(85, 72, 72);
+
+
+
+}

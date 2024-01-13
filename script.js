@@ -4,6 +4,9 @@ let pontszamElem = document.getElementById("pontszam");
 let talalatokElem = document.getElementById("talalatok");
 let ujrakezdes=document.getElementById("ujrakezdes");
 
+
+let body=document.querySelector("body")
+let sotet=document.getElementById("sotet");
 let szinekEsSzavak = [`<img src="./img/cat1.jpg">`, '<img src="./img/cat2.jpg">', '<img src="./img/cat3.jpg">', '<img src="./img/cat4.jpg">', '<img src="./img/cat5.webp">', '<img src="./img/cat6.jpg">'];
 let kartyak = szinekEsSzavak.concat(szinekEsSzavak); // duplikáljuk a kártyákat
 let megnyitottKartyak = [];
@@ -107,6 +110,24 @@ jatekInicializalas();
 ujrakezdes.addEventListener("click" , event=>{
 
 location.reload();
+
+
+})
+
+
+sotet.addEventListener("click", event=>{
+
+if(body.className=="sotet"){
+body.className="";
+sotet.textContent="🌛"
+
+
+
+
+}else{body.className="sotet";
+sotet.textContent="🌞"
+
+}
 
 
 })
