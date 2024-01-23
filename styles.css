@@ -12,12 +12,9 @@ header{
     background-color: #BAA898;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
-
 }
 h1{
-font-size: 40px;
-
-
+    font-size: 40px;
 }
 .bevezeto{
     padding:15px ;
@@ -36,7 +33,6 @@ font-size: 40px;
     padding: 15px;
     background-color: #eee0cb;
     border-radius: 10% 10% 0 0;
-
 }
   
 #jatekTer div {
@@ -50,37 +46,27 @@ font-size: 40px;
 }
 
 #jatekTer img{
-width: 100px;
-height: 100px;
-border-radius: 10%;
-
-
-
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
 } 
 
 footer{
     background-color: #eee0cb;
-margin: auto;
-width: 790px;
-padding: 15px;
-border-radius: 0 0 10% 10%;
+    margin: auto;
+    width: 790px;
+    padding: 15px;
+    border-radius: 0 0 10% 10%;
 }
 
 .reset{
-float: right;
-
-
-
+    float: right;
 }
 body{
-
-
     background-color: #aec6b4;
 }
 
 #ujrakezdes{
-
-
     width: 80px ;
     height: 50px;
     border: 10px;
@@ -88,43 +74,36 @@ body{
 }
 
 #eredmenyek{
-
-
     background-color: #bfd7ea;
 }
 
 #logo{
-height: 120px;
-width: 140px;
-float: left ;
-position: absolute;
-left: 10px;
-
+    height: 120px;
+    width: 140px;
+    float: left ;
+    position: absolute;
+    left: 10px;
 }
 
 #lenti{
-width: 400px;
-height: 150px;
-margin-top: 4rem;
-margin-bottom: 0;
-border: 0;
-padding-bottom: 0;
-justify-content: center;
-text-align: center;
-margin-left: 45rem;
+    width: 400px;
+    height: 150px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    border: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    text-align: center;
+    margin-left: 45rem;
 }
 
 #paws{
-
     width: 400px;
     height: 250px;
-float: right;
-
-
+    float: right;
 }
 
 #sotet{
-
     height: 70px;
     width: 70px;
     float: right ;
@@ -133,49 +112,38 @@ float: right;
     font-size: 2rem;
     border-radius: 50%;
     background-color: #776f6863;
-
 }
 
 .sotet header{
-background-color: rgb(85, 72, 72);
-color: rgb(0, 0, 0);
-
+    background-color: rgb(85, 72, 72);
+    color: rgb(0, 0, 0);
 }
 
 .sotet #eredmenyek , .sotet #ujrakezdes{
-
-
-background-color: rgb(85, 72, 72);
-color: rgb(0, 0, 0);
-font-weight: bolder;
-
-
+    background-color: rgb(85, 72, 72);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 .sotet #jatekTer div{
-
-background-color: rgb(69, 61, 61);
-
-
+    background-color: rgb(69, 61, 61);
 }
 
 .sotet{
-background-color: #797068;
-color: rgb(21, 21, 20);
-font-weight: bolder;
-
+    background-color: #797068;
+    color: rgb(21, 21, 20);
+    font-weight: bolder;
 }
 
 .sotet #jatekTer{
-
-background-color: #93877e;
-
-
+    background-color: #93877e;
 }
 
 .sotet footer{
    background-color: rgb(85, 72, 72);
-
-
-
+}
+.kep{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }

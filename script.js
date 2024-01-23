@@ -35,11 +35,11 @@ function keveres(arr) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
+    //jelenlegi elem elmentése, majd csere a véletlenszerűen kiválasztott elemmel
     temporaryValue = arr[currentIndex];
     arr[currentIndex] = arr[randomIndex];
     arr[randomIndex] = temporaryValue;
   }
-
   return arr;
 }
 
@@ -56,34 +56,26 @@ function jatekInicializalas() {
   idoMero = setInterval(function() {
     ido++;
     idoElem.textContent = `Idő: ${ido} másodperc`;
+
     if( ido==120){
-    clearInterval(idoMero);
-    alert("Sajnos lejárt az időd! 😿")
+      clearInterval(idoMero);
+      alert("Sajnos lejárt az időd! 😿")
+      let osszes=document.querySelectorAll("#jatekTer div");
 
-
-let osszes=document.querySelectorAll("#jatekTer div");
-for(let i=0;i<osszes.length; i++){
-osszes[i].innerHTML=kartyak[osszes[i].dataset.index];
-
-
-
-}
+      for(let i=0;i<osszes.length; i++){
+        osszes[i].innerHTML=kartyak[osszes[i].dataset.index];
+      }
     }
-
-
   }, 1000);
 }
 
 function kartyaKattintas() {
   let kartya = this;
   let index = kartya.dataset.index;
-
   kattintas ++;
 
   if(kattintas<5){
-
     joker.innerText=5-kattintas
-
   }
   else {joker.innerText=0}
 
@@ -91,25 +83,21 @@ function kartyaKattintas() {
     kartya.innerHTML = kartyak[index];
     megnyertKartyak = megnyertKartyak.concat(megnyitottKartyak);
 
-  if(kattintas<=5){
-    
-
-    pontszam +=5;
-    alert("megtaláltad a jokert!🐶");
-    pontszamElem.textContent = pontszam;
-  
-
-  }  
+    if(kattintas<=5){
+      pontszam +=5;
+      alert("megtaláltad a jokert!🐶");
+      pontszamElem.textContent = pontszam;
+    }
   return;
   }
 
   if (elsoKattintas || (megnyitottKartyak.length < 2 && !megnyertKartyak.includes(index))) {
+
     kartya.innerHTML = kartyak[index];
 
     if (elsoKattintas) {
       elsoKattintas = false;
     }
-
     megnyitottKartyak.push(index);
 
     if (megnyitottKartyak.length === 2) {
@@ -125,7 +113,8 @@ function kartyaKattintas() {
         pontszamElem.textContent = pontszam;
         talalatokElem.textContent = talalatok;
         megnyertKartyak = megnyertKartyak.concat(megnyitottKartyak);
-      } else {
+      } 
+      else {
         tucsok.currentTime=0;
         tucsok.play();
 
@@ -136,9 +125,7 @@ function kartyaKattintas() {
           masodikKartya.textContent = "";
         }, 1000);
       }
-
       megnyitottKartyak = [];
-
       if (megnyertKartyak.length === kartyak.length) {
         clearInterval(idoMero);
         alert(`Gratulálok! Nyertél ${ido} másodperc alatt! 😻`);
@@ -149,27 +136,17 @@ function kartyaKattintas() {
 
 jatekInicializalas();
 
-ujrakezdes.addEventListener("click" , event=>{
-
-location.reload();
-
-
+ujrakezdes.addEventListener("click" , (event)=>{
+  location.reload();
 })
 
 
-sotet.addEventListener("click", event=>{
-
-if(body.className=="sotet"){
-body.className="";
-sotet.textContent="🌛"
-
-
-
-
-}else{body.className="sotet";
-sotet.textContent="🌞"
-
-}
-
-
-})
+sotet.addEventListener("click", (event)=>{
+  if(body.className=="sotet"){
+  body.className="";
+  sotet.textContent="🌛"}
+  else{
+  body.className="sotet";
+  sotet.textContent="🌞"
+  }}
+)
