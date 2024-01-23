@@ -19,11 +19,8 @@ let ido = 0;
 let idoMero;
 let kattintas=0;
 
-
-
+//joker hozzaadasa a tombhoz
 kartyak.push("<img src='img/huh-what-dog-huh.gif' id='joker'>");
-
-
 
 function keveres(arr) {
   let currentIndex = arr.length, temporaryValue, randomIndex;
@@ -152,6 +149,7 @@ ujrakezdes.addEventListener("click" , (event)=>{
   //oldal újra töltése=>ujrakezdes
   location.reload();
 })
+
 
 //sotetmod hozzaadasa
 sotet.addEventListener("click", (event)=>{
