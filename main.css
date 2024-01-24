@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    background-color: #CEA0AE;
+}
+header{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #684551;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-weight: bold;
+    color: white;
+}
+#logo{
+    height: 120px;
+    width: 140px;
+    float: left ;
+    position: absolute;
+    left: 10px;
+}
+.bevezeto{
+    padding:2rem;
+    font-size: 1rem;
+    background-color: #D5B0AC;
+    margin: 1rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 40px;
+}
